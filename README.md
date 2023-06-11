@@ -18,22 +18,23 @@ This tool was originally written by [0-duke](https://github.com/0-duke/wdpasspor
 
 ## Installing
 
-You'll need the Python 3 development headers to install this tool. On Ubuntu run:
+You'll need the Python 3 development headers to install this tool. On Ubuntu 22.04 LTS run:
 
 ```
 sudo apt install python3 python3-dev python3-pip git
 ```
 
+Install py3_sg via pip
+```
+sudo python3 -m pip install py3_sg
+```
+
 On other Linux distributions you may need a different command.
 
-Then use pip3 to install the source code in this repository:
+You *must* use sudo in this command.  Usually that's a bad idea when running pip but we need to be root to access the devices.
+Then use pip to install the source code in this repository:
 ```
-sudo pip3 install git+https://github.com/0-duke/wdpassport-utils
-```
-
-and install the required "py_sg" module for Python3:
-```
-sudo pip3 install --user git+https://github.com/crypto-universe/py_sg
+sudo pip install git+https://github.com/0-duke/wdpassport-utils
 ```
 
 ## Usage
